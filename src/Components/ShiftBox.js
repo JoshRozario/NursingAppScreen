@@ -25,6 +25,7 @@ function ShiftBox(props) {
                 
             </div>
             <div className="buttons">
+            {/* checks wheter decline button should be displayed*/}
               {props.decline?
                 <Button style = {{borderWidth: "2px" ,borderColor: "#29334f", color:"#29334f", fontWeight:"bold"}}variant="outlined">Decline</Button>
               :<div/>}

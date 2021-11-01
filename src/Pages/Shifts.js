@@ -8,14 +8,19 @@ import axios from 'axios'
 
 export default function Shifts() {
 
+    //stores the fetched job details
     const [info,setInfo] = useState(0)
 
+    //Stores current page number
     const [page,setPage] = useState(0)
 
+    //Stores total number of pages
     const [pages,setPages] = useState(0)
 
+    //text for current date 
     const [dates, setDates] = useState("loading...")
 
+    //Fetches data from the server
     const fetchData = () =>  {
         axios("http://localhost:5000/")
         .then((response => {
@@ -42,11 +47,9 @@ export default function Shifts() {
         console.log(page,pages)
     }
 
-
-
+    //fetches data onload
     useEffect(() => {
         fetchData();
-        
       }, []);
 
     return (
@@ -55,6 +58,7 @@ export default function Shifts() {
                 <h1 className>Shifts</h1>
                 <p>You've been invited</p>
             </div>
+            {/* maps through invites and the displays them */}
             {info.invites?
                 info.invites.map(job => (
                     <ShiftBox decline={true} info={job}></ShiftBox>
@@ -67,6 +71,7 @@ export default function Shifts() {
                 <ArrowForwardIosIcon onClick={handleClickForward}></ArrowForwardIosIcon>
             </div>
             <div className="shiftItem">
+            {/* maps through available jobs and the displays them */}
             {info.available?
                 info.available[page].map(job => (
                     <ShiftBox decline={false} info={job}></ShiftBox>
