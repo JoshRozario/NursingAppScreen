@@ -1,0 +1,26 @@
+.shiftText {
+  margin-left: 5vw;
+  color: #4c5366;
+}
+
+.dateArrow {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dateArrow p {
+  margin: 0px 4px 0px 0px;
+  padding: 0px;
+}
+
+.shiftItem > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-color: #29334f;
+}
+/*# sourceMappingURL=Shifts.css.map */

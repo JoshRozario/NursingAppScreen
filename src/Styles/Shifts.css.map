@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,GAAG;EAChB,KAAK,ECDK,OAAgB;CDE3B;;AAED,AAAA,UAAU,CAAC;EACT,WAAW,EAAE,IAAI;EACjB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;CACxB;;AAED,AAAA,UAAU,CAAC,CAAC,CAAC;EACX,MAAM,EAAE,eAAe;EACvB,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,UAAU,GAAG,GAAG,CAAC;EACf,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;EACnB,iBAAiB,ECrBJ,OAAO;CDsBrB",
+    "sources": [
+        "Shifts.scss",
+        "Variables.scss"
+    ],
+    "names": [],
+    "file": "Shifts.css"
+}

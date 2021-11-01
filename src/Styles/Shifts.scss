@@ -1,0 +1,23 @@
+@import "./Variables.scss";
+
+.shiftText {
+  margin-left: 5vw;
+  color: $fontColor;
+}
+
+.dateArrow {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.dateArrow p {
+  margin: 0px 4px 0px 0px;
+  padding: 0px;
+}
+
+.shiftItem > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-left-color: $primaryColor;
+}
